@@ -8,18 +8,87 @@
 <body>
     <header>
         <nav>
-            <a href="./index.html">HOME</a>
+            <a href="../index.html">HOME</a>
             <a href="./about.html">ABOUT US</a>
             <a href="./products.html">PRODUCTS</a>
             <a href="./detail.html">DETAILS</a>
             <a href="./contact.html">CONTACT US</a>
             <a href="./enquiry.html">ENQUIRY</a>
+            <a href="./account.html">ACCOUNT</a>
         </nav>
     </header>
     <!--Main section-->
     <main>
+        <section>
+        <h1 style="color: blue;">ENQUIRY PAGE</h1>
+            <h2>Have a Question? We're Here to Help!</h2>
 
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <br><br>
+                <label for="enquiryType">Enquiry Type:</label>
+                <select id="enquiryType" name="enquiryType" required>
+                    <option value="">-- Select Enquiry Type --</option>
+                    <option value="product">Product</option>
+                    <option value="installation">Installation</option>
+                    <option value="quotation">Quotation</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+                <br><br>
+
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">
+                    I agree to the <a href="./privacy.html">Privacy Policy</a>
+                </label>
+                <br><br>
+                <input type="submit" value="Submit Enquiry">
+            </form>
+            </section>
+
+        <hr>
+
+        <!-- Contact Details -->
+        <section>
+            <h2>Contact Details</h2>
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:+27110000000">+27 11 000 0000</a>
+            </p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:info@cooknflush.co.za">info@cooknflush.co.za</a>
+            </p>
+        </section>
     </main>
+
+    <footer>
+        <h3>Social Media</h3>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+
+        <p>
+            <a href="./privacy.html">Privacy Policy</a> |
+            <a href="./terms.html">Terms</a>
+        </p>
+
+        <p>&copy; 2026 Cook n Flush. All rights reserved.</p>
+    </footer>
     
 </body>
 </html>
