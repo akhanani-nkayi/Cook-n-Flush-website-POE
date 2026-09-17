@@ -80,11 +80,24 @@ section {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 }
 
+/* Headings */
 h1 {
-    color: blue;
-    text-decoration-style: solid;
-    background-color: lightgray;
+    color: #0d47a1;
+    background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 15px;
+    border-left: 6px solid #1565c0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2b2c2c;
+}
+
+h3 {
+    color: #333333;
 }
 
 body { 
