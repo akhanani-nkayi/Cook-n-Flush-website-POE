@@ -55,6 +55,26 @@ body {
     background-color: #a3a3a3;
 }
 
+/* Product details */
+main section[id] img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+main section[id] ul {
+    background-color: #f1f4f8;
+    padding: 20px 40px;
+    border-left: 4px solid #1565c0;
+    border-radius: 5px;
+}
+
+main section[id] li {
+    margin-bottom: 8px;
+}
+
 /* Google map */
 iframe {
     display: block;
