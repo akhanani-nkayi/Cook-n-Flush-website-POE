@@ -71,6 +71,14 @@ main img {
                 box-shadow 0.3s ease;
 }
 
+/* Section styles */
+section {
+    background-color: darkcyan;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
 
 h1 {
     color: blue;
