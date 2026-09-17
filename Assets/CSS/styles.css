@@ -39,6 +39,8 @@ div.flex-container > div {
   }
 }
 
+
+
 h1 {
     color: blue;
     text-decoration-style: solid;
@@ -60,3 +62,25 @@ footer {
     padding: 8px;
 }
 
+//For small screens: Mobile phone
+@media screen and (max-width: 400px) {
+    .nav-link {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    main form {
+        padding: 15px;
+    }
+}
