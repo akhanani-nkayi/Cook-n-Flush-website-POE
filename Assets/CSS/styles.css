@@ -62,6 +62,96 @@ footer {
     padding: 8px;
 }
 
+<!-- Responsive to normal mobile phone -->
+@media screen and (max-width: 600px) {
+    header {
+        padding: 12px 10px;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: 4px;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 21px;
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 18px 0;
+    }
+
+    main section div {
+        flex-direction: column;
+    }
+
+    main section div img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    article img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    main form {
+        padding: 20px;
+    }
+
+    form input[type="search"] {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    button,
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    iframe {
+        height: 280px;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+}
+
 //For small screens: Mobile phone
 @media screen and (max-width: 400px) {
     .nav-link {
