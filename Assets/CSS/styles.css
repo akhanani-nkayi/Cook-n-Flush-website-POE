@@ -55,6 +55,33 @@ body {
     background-color: #a3a3a3;
 }
 
+/* The Featured products of the webpage */
+/* This works with existing div */
+main section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main section div img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Links */
+main a {
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #1976d2;
+}
+
 /* Button */
 button,
 input[type="submit"] {
