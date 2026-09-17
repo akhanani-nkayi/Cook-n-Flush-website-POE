@@ -55,6 +55,25 @@ body {
     background-color: #a3a3a3;
 }
 
+/* Google map */
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Horizontal rule styles */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #d0d5db;
+    margin: 30px 0;
+}
+
 /* Footer styles */
 footer {
     background: linear-gradient(135deg, #0d47a1, #1565c0);
