@@ -55,6 +55,49 @@ body {
     background-color: #a3a3a3;
 }
 
+/* Enquiry page form */
+/* Gives the enquiry form a block/card appearance */
+main form {
+    background-color: #f8f9fa;
+    border: 1px solid #d5dbe3;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Make enquiry form fields easier to use */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="search"],
+form select,
+form textarea {
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+
+/* Search bar form */
+form input[type="search"] {
+    width: 70%;
+}
+
+/* Checkbox should not stretch */
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+/* Product search and filter */
+section form {
+    background-color: #f8f9fa;
+}
+
+select {
+    min-width: 220px;
+}
+
 /* Product details */
 main section[id] img {
     width: 300px;
