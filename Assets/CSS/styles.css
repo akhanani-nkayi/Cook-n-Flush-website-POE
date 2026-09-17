@@ -55,14 +55,28 @@ body {
     background-color: #a3a3a3;
 }
 
+/* Footer styles */
 footer {
-    background-color: #1014e2;
+    background: linear-gradient(135deg, #0d47a1, #1565c0);
     color: white;
     text-align: center;
-    padding: 8px;
+    padding: 25px 15px;
+    margin-top: 40px;
 }
 
-<!-- Responsive to tablets -->
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #bbdefb;
+    text-decoration: underline;
+}
+
+
+/* Responsive to tablets */
 @media screen and (max-width: 768px) {
     main {
         width: 94%;
@@ -104,7 +118,7 @@ footer {
     }
 }
 
-<!-- Responsive to normal mobile phone -->
+/* Responsive to normal mobile phone */
 @media screen and (max-width: 600px) {
     header {
         padding: 12px 10px;
@@ -194,7 +208,7 @@ footer {
     }
 }
 
-//For small screens: Mobile phone
+/* For small screens: Mobile phone */
 @media screen and (max-width: 400px) {
     .nav-link {
         font-size: 13px;
