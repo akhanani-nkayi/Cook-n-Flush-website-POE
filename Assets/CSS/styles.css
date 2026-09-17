@@ -24,6 +24,21 @@ ul.topnav li a:hover {
     background-color: #1594dd;
 }
 
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
+
 h1 {
     color: blue;
     text-decoration-style: solid;
