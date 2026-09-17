@@ -39,6 +39,40 @@ div.flex-container > div {
   }
 }
 
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: #0d47a1;
+    transform: translateY(-2px);
+}
+
+.nav-link:focus {
+    outline: 3px solid #90caf9;
+    outline-offset: 2px;
+}
+
 /* Hero banner image */
 section img[alt="Hero Banner"] {
     width: 100%;
@@ -98,6 +132,13 @@ h2 {
 
 h3 {
     color: #333333;
+}
+
+/* Main content area */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
 }
 
 body { 
