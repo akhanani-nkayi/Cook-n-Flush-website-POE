@@ -50,6 +50,28 @@ section img[alt="Hero Banner"] {
     margin: 0 auto;
 }
 
+/* Images */
+/* Makes normal website images responsive */
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Image hover effect */
+main img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+/* Smooth animation */
+main img {
+    transition: transform 0.3s ease,
+                filter 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
 h1 {
     color: blue;
     text-decoration-style: solid;
