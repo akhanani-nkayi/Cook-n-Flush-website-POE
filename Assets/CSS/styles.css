@@ -55,6 +55,29 @@ body {
     background-color: #a3a3a3;
 }
 
+/* Button */
+button,
+input[type="submit"] {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0d47a1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 71, 161, 0.3);
+}
+
 /* Form styles */
 form {
     max-width: 700px;
