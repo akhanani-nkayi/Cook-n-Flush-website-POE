@@ -55,6 +55,38 @@ body {
     background-color: #a3a3a3;
 }
 
+/* Product images response design */
+article {
+    background-color: #f8f9fa;
+    border: 1px solid #d9dee5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(13, 71, 161, 0.15);
+    border-color: #1565c0;
+}
+
+article img {
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+article img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
 /* The Featured products of the webpage */
 /* This works with existing div */
 main section div {
