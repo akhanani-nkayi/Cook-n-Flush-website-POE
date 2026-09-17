@@ -39,7 +39,16 @@ div.flex-container > div {
   }
 }
 
-
+/* Hero banner image */
+section img[alt="Hero Banner"] {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    min-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+}
 
 h1 {
     color: blue;
