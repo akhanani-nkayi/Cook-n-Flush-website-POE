@@ -1,668 +1,670 @@
 @import url(https://fonts.google.com/specimen/DM+Sans);
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #0d47a1, #1565c0);
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #0d47a1, #1565c0); /* Add a blue gradient background */
+    color: white;/* Set the text colour to white */
+    padding: 15px 20px;/* Add space inside the header */
+    text-align: center;/* Centre the content */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);/* Add a shadow underneath the header */
 }
 
 /* Logo */
-header img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+header img {/* Style the logo image inside the header */
+    width: 100px;/* Set the logo width */
+    height: 100px;/* Set the logo height */
+    object-fit: cover;/* Make the image cover its area without distortion */
+    border-radius: 50%;/* Make the logo circular */
+    border: 4px solid white;/* Add a white border around the logo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;/* Add a smooth animation when the logo changes */
 }
 
-header img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+header img:hover {/* Change the logo appearance when the mouse hovers over it */
+    transform: scale(1.08);/* Slightly enlarge the logo */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);/* Add a glowing effect around the logo */
 }
 
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: aqua;
+ul.topnav {/* Remove default list styling from the top navigation */
+    list-style-type: none;/* Remove bullet points */
+    margin: 0;/* Remove default margin */
+    padding: 0;/* Remove default padding */
+    overflow: hidden;/* Hide any overflowing content */
+    background-color: aqua;/* Set the background color of the navigation bar */
 }
 
-ul.topnav li a{
-    display: block;
-    color: #f1f1f1;
-    padding: 14px 16px;
-    text-decoration: none
+ul.topnav li a{/* Style the links inside the top navigation */
+    display: block;/* Make the links block-level elements */
+    color: #f1f1f1;/* Set the text color to a light shade */
+    padding: 14px 16px;/* Add padding around the links */
+    text-decoration: none;/* Remove underline from links */
 }
 
-ul.topnav li a:hover {
-    background-color: #1594dd;
+ul.topnav li a:hover {/* Change the link appearance when hovered over */
+    background-color: #1594dd;/* Change the background color on hover */
 }
 
-div.flex-container {
-  display: flex;
-  flex-direction: row;
+div.flex-container {/* Create a flex container for layout */
+  display: flex;/* Enable flexbox layout */
+  flex-direction: row;/* Arrange items in a row */
 }
 
-div.flex-container > div {
-  margin: 10px;
+div.flex-container > div {/* Style the child divs inside the flex container */
+  margin: 10px;/* Add margin around each child div */
 }
 
-@media screen and (max-width:600px) {
-  div.flex-container {
-    flex-direction: column;
+@media screen and (max-width:600px) {/* Adjust layout for smaller screens */
+  div.flex-container {/* Change the flex direction for small screens */
+    flex-direction: column;/* Stack items vertically */
   }
 }
 
 /* Navigation bar styles */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 15px;
+nav {/* Style the navigation bar */
+    display: flex;/* Use flexbox for layout */
+    justify-content: center;/* Center the navigation links */
+    align-items: center;/* Align the navigation links vertically */
+    flex-wrap: wrap;/* Allow the links to wrap to the next line if needed */
+    gap: 8px;/* Add space between the navigation links */
+    margin-top: 15px;/* Add space above the navigation bar */
 }
 
-.nav-link {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 10px 16px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease,
+.nav-link {/* Style the individual navigation links */
+    display: inline-block;/* Make the links inline-block elements */
+    color: white;/* Set the text color to white */
+    text-decoration: none;/* Remove underline from links */
+    font-weight: bold;/* Make the text bold */
+    font-size: 14px;/* Set the font size */
+    padding: 10px 16px;/* Add padding around the links */
+    border-radius: 6px;/* Round the corners of the links */
+    transition: background-color 0.3s ease,/* Add smooth hover transitions */
                 color 0.3s ease,
                 transform 0.3s ease;
 }
 
-.nav-link:hover {
-    background-color: white;
-    color: #0d47a1;
-    transform: translateY(-2px);
+.nav-link:hover {/* Change the link appearance when hovered over */
+    background-color: white;/* Change the background color on hover */
+    color: #0d47a1;/* Change the text color on hover */
+    transform: translateY(-2px);/* Slightly move the link up on hover */
 }
 
-.nav-link:focus {
-    outline: 3px solid #90caf9;
-    outline-offset: 2px;
+.nav-link:focus {/* Style the link when it receives focus */
+    outline: 3px solid #90caf9;/* Add a blue outline for accessibility */
+    outline-offset: 2px;/* Offset the outline from the link */
 }
 
 /* Hero banner image */
-section img[alt="Hero Banner"] {
-    width: 100%;
-    max-width: 1300px;
-    height: auto;
-    min-height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 0 auto;
+section img[alt="Hero Banner"] {/* Style the hero banner image */
+    width: 100%;/* Make the image take up the full width of its container */
+    max-width: 1300px;/* Limit the maximum width of the image */
+    height: auto;/* Maintain the aspect ratio of the image */
+    min-height: 250px;/* Set the minimum height of the image */
+    object-fit: cover;/* Cover the entire container while maintaining aspect ratio */
+    border-radius: 10px;/* Round the corners of the image */
+    margin: 0 auto;/* Center the image horizontally */
 }
 
 /* Images */
 /* Makes normal website images responsive */
-main img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+main img {/* Style images inside the main content area */
+    max-width: 100%;/* Make the image responsive to its container */
+    height: auto;/* Maintain the aspect ratio of the image */
+    display: block;/* Make the image a block-level element */
 }
 
 /* Image hover effect */
-main img:hover {
-    transform: scale(1.03);
-    filter: brightness(1.05);
+main img:hover {/* Change the image appearance when hovered over */
+    transform: scale(1.03);/* Slightly enlarge the image on hover */
+    filter: brightness(1.05);/* Increase the brightness of the image on hover */
 }
 
 /* Smooth animation */
-main img {
-    transition: transform 0.3s ease,
+main img {/* Add smooth transitions for image effects */
+    transition: transform 0.3s ease,/* Smoothly animate the transform property */
                 filter 0.3s ease,
                 box-shadow 0.3s ease;
 }
 
 /* Section styles */
-section {
-    background-color: darkcyan;
-    margin: 25px 0;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+section {/* Style the sections of the webpage */
+    background-color: darkcyan;/* Set a dark cyan background color for sections */
+    margin: 25px 0;/* Add vertical spacing between sections */
+    padding: 25px;/* Add padding inside the sections */
+    border-radius: 10px;/* Round the corners of the sections */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);/* Add a subtle shadow to the sections */
 }
 
 /* Headings */
-h1 {
-    color: #0d47a1;
-    background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    padding: 15px;
-    border-left: 6px solid #1565c0;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+h1 {/* Style the main heading of the webpage */
+    color: #0d47a1;/* Set the text color to a dark blue */
+    background-color: white;/* Set the background color to white */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/* Use a clean sans-serif font for the heading */
+    text-align: center;/* Center the heading text */
+    padding: 15px;/* Add padding around the heading */
+    border-left: 6px solid #1565c0;/* Add a left border to the heading for emphasis */
+    border-radius: 6px;/* Round the corners of the heading */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);/* Add a subtle shadow to the heading */
 }
 
-h2 {
-    color: #2b2c2c;
+h2 {/* Style the second-level headings */
+    color: #2b2c2c;/* Set the text color to a dark gray */
 }
 
-h3 {
-    color: #333333;
+h3 {/* Style the third-level headings */
+    color: #333333;/* Set the text color to a darker gray */
 }
 
 /* Main content area */
-main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
+main {/* Style the main content area of the webpage */
+    width: 90%;/* Set the width of the main content area */
+    max-width: 1200px;/* Limit the maximum width of the main content area */
+    margin: 30px auto;/* Center the main content area horizontally */
 }
 
 /* General Reset */
-* {
-    box-sizing: border-box;
+* {/* Apply a universal box-sizing rule to all elements */
+    box-sizing: border-box;/* Include padding and border in the element's total width and height */
 }
 
-html {
-    scroll-behavior: smooth;
+html {/* Style the HTML element */
+    scroll-behavior: smooth;/* Enable smooth scrolling for anchor links */
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f4f7;
-    color: #000000;
-    line-height: 1.6;
+body {/* Style the body of the webpage */
+    font-family: Arial, Helvetica, sans-serif;/* Use a clean sans-serif font for the body text */
+    margin: 0;/* Remove default margin from the body */
+    padding: 0;/* Remove default padding from the body */
+    background-color: #f2f4f7;/* Set a light gray background color for the body */
+    color: #000000;/* Set the default text color to black */
+    line-height: 1.6;/* Set a comfortable line height for readability */
 }
 
 /* Product images response design */
-article {
-    background-color: #f8f9fa;
-    border: 1px solid #d9dee5;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
+article {/* Style the article elements, which may contain product images */
+    background-color: #f8f9fa;/* Set a light background color for articles */
+    border: 1px solid #d9dee5;/* Add a light border around articles */
+    border-radius: 10px;/* Round the corners of articles */
+    padding: 20px;/* Add padding inside articles */
+    margin: 20px 0;/* Add vertical spacing between articles */
+    transition: transform 0.3s ease,/* Smoothly animate the transform property */
+                box-shadow 0.3s ease,/* Smoothly animate the box-shadow property */
+                border-color 0.3s ease;/* Smoothly animate the border-color property */
 }
 
-article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(13, 71, 161, 0.15);
-    border-color: #1565c0;
+article:hover {/* Change the article appearance when hovered over */
+    transform: translateY(-5px);/* Slightly move the article up on hover */
+    box-shadow: 0 8px 20px rgba(13, 71, 161, 0.15);/* Add a subtle shadow to the article on hover */
+    border-color: #1565c0;/* Change the border color of the article on hover */
 }
 
-article img {
-    width: 200px;
-    max-width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin: 0 auto 15px;
-    border-radius: 8px;
+article img {/* Style the images inside articles */
+    width: 200px;/* Set a fixed width for the images */
+    max-width: 100%;/* Ensure the images are responsive and do not exceed their container */
+    height: 200px;/* Set a fixed height for the images */
+    object-fit: cover;/* Ensure the images cover the specified dimensions without distortion */
+    margin: 0 auto 15px;/* Center the images and add spacing below them */
+    border-radius: 8px;/* Round the corners of the images */
 }
 
-article img:hover {
-    transform: scale(1.07);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+article img:hover {/* Change the image appearance when hovered over */
+    transform: scale(1.07);/* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);/* Add a subtle shadow to the image on hover */
 }
 
 /* The Featured products of the webpage */
 /* This works with existing div */
-main section div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+main section div {/* Style the divs inside sections of the main content area */
+    display: flex;/* Use flexbox for layout */
+    justify-content: center;/* Center the child elements horizontally */
+    align-items: center;/* Center the child elements vertically */
+    flex-wrap: wrap;/* Allow the child elements to wrap to the next line if needed */
+    gap: 20px;/* Add space between the child elements */
 }
 
-main section div img {
-    width: 300px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
+main section div img {/* Style the images inside divs of sections in the main content area */
+    width: 300px;/* Set a fixed width for the images */
+    height: 220px;/* Set a fixed height for the images */
+    object-fit: cover;/* Ensure the images cover the specified dimensions without distortion */
+    border-radius: 10px;/* Round the corners of the images */
 }
 
 /* Links */
-main a {
-    color: #0d47a1;
-    font-weight: bold;
+main a {/* Style the links inside the main content area */
+    color: #0d47a1;/* Set the text color to a dark blue */
+    font-weight: bold;/* Make the text bold */
 }
 
-main a:hover {
-    color: #1976d2;
+main a:hover {/* Change the link appearance when hovered over */
+    color: #1976d2;/* Change the text color to a lighter blue on hover */
 }
 
 /* Button */
 button,
-input[type="submit"] {
-    background-color: #1565c0;
-    color: white;
-    border: none;
-    padding: 11px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-    transition: background-color 0.3s ease,
+input[type="submit"] {/* Style the buttons and submit inputs */
+    background-color: #1565c0;/* Set the background color to a dark blue */
+    color: white;/* Set the text color to white */
+    border: none;/* Remove the default border */
+    padding: 11px 20px;/* Add padding inside the buttons */
+    border-radius: 6px;/* Round the corners of the buttons */
+    cursor: pointer;/* Change the cursor to a pointer on hover */
+    font-size: 15px;/* Set the font size */
+    font-weight: bold;/* Make the text bold */
+    transition: background-color 0.3s ease,/* Smoothly animate the background color property */
                 transform 0.2s ease,
                 box-shadow 0.3s ease;
 }
 
 button:hover,
-input[type="submit"]:hover {
-    background-color: #0d47a1;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(13, 71, 161, 0.3);
+input[type="submit"]:hover {/* Change the button appearance when hovered over */
+    background-color: #0d47a1;/* Change the background color to a darker blue on hover */
+    transform: translateY(-2px);/* Slightly move the button up on hover */
+    box-shadow: 0 4px 10px rgba(13, 71, 161, 0.3);/* Add a subtle shadow to the button on hover */
 }
 
 /* Form styles */
-form {
-    max-width: 700px;
-    margin: 20px auto;
+form {/* Style the forms on the webpage */
+    max-width: 700px;/* Limit the maximum width of the forms */
+    margin: 20px auto;/* Center the forms horizontally and add vertical spacing */
 }
 
-label {
-    font-weight: bold;
-    color: #333333;
+label {/* Style the labels inside forms */
+    font-weight: bold;/* Make the label text bold */
+    color: #333333;/* Set the text color to a dark gray */
 }
 
 input,
 select,
-textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    padding: 11px;
-    border: 1px solid #b8c0cc;
-    border-radius: 6px;
-    background-color: white;
-    color: #333333;
-    transition: border-color 0.3s ease,
-                box-shadow 0.3s ease;
+textarea {/* Style the input fields, select dropdowns, and textareas inside forms */
+    width: 100%;/* Make the form elements take up the full width of their container */  
+    font-family: Arial, Helvetica, sans-serif;/* Use a clean sans-serif font for form inputs */
+    font-size: 15px;/* Set the font size for form inputs */
+    padding: 11px;/* Add padding inside the form inputs */
+    border: 1px solid #b8c0cc;/* Set a light border color for form inputs */
+    border-radius: 6px;/* Round the corners of the form inputs */
+    background-color: white;/* Set the background color of the form inputs to white */
+    color: #333333;/* Set the text color of the form inputs to a dark gray */
+    transition: border-color 0.3s ease,/* Smoothly animate the border color property */
+                box-shadow 0.3s ease;/* Smoothly animate the box-shadow property */
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: #1565c0;
-    box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.15);
+input:focus,/* Style the form elements when they receive focus */
+select:focus,/* Style the form elements when they receive focus */
+textarea:focus {/* Style the form elements when they receive focus */
+    outline: none;/* Remove the default outline */
+    border-color: #1565c0;/* Change the border color to a dark blue on focus */
+    box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.15);/* Add a subtle shadow around the form elements on focus */
 }
 
 /* Enquiry page form */
 /* Gives the enquiry form a block/card appearance */
-main form {
-    background-color: #f8f9fa;
-    border: 1px solid #d5dbe3;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+main form {/* Style the forms inside the main content area */
+    background-color: #f8f9fa;/* Set a light background color for the forms */
+    border: 1px solid #d5dbe3;/* Add a light border around the forms */
+    border-radius: 10px;/* Round the corners of the forms */
+    padding: 30px;/* Add padding inside the forms */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);/* Add a subtle shadow to the forms */
 }
 
 /* Make enquiry form fields easier to use */
-form input[type="text"],
-form input[type="email"],
-form input[type="tel"],
-form input[type="password"],
-form input[type="search"],
-form select,
-form textarea {
-    width: 100%;
-    margin-top: 6px;
-    margin-bottom: 15px;
+form input[type="text"],/* Style text input fields */
+form input[type="email"],/* Style email input fields */
+form input[type="tel"],/* Style telephone input fields */
+form input[type="password"],/* Style password input fields */
+form input[type="search"],/* Style search input fields */
+form select,/* Style select dropdowns */
+form textarea {/* Style textareas */
+    width: 100%;/* Make the form elements take up the full width of their container */
+    margin-top: 6px;/* Add space above the form elements */
+    margin-bottom: 15px;/* Add space below the form elements */
 }
 
 /* Search bar form */
-form input[type="search"] {
-    width: 70%;
+form input[type="search"] {/* Style the search input fields */
+    width: 70%;/* Make the search input fields take up 70% of their container's width */
 }
 
 /* Checkbox should not stretch */
-form input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
+form input[type="checkbox"] {/* Style the checkbox input fields */
+    width: auto;/* Make the checkbox input fields take up their natural width */
+    margin-right: 8px;/* Add space to the right of the checkbox input fields */
 }
 
 /* Product search and filter */
-section form {
-    background-color: #f8f9fa;
+section form {/* Style the forms inside sections of the webpage */
+    background-color: #f8f9fa;/* Set a light background color for the forms */
 }
 
-select {
-    min-width: 220px;
+select {/* Style the select dropdowns */
+    min-width: 220px;/* Set a minimum width for the select dropdowns */
 }
 
 /* Product details */
-main section[id] img {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 15px auto;
+main section[id] img {/* Style the images inside sections with an ID in the main content area */
+    width: 300px;/* Set a fixed width for the images */
+    max-width: 100%;/* Ensure the images are responsive and do not exceed their container */
+    height: auto;/* Maintain the aspect ratio of the images */
+    border-radius: 10px;/* Round the corners of the images */
+    margin: 15px auto;/* Center the images horizontally and add vertical spacing */
 }
 
-main section[id] ul {
-    background-color: #f1f4f8;
-    padding: 20px 40px;
-    border-left: 4px solid #1565c0;
-    border-radius: 5px;
+main section[id] ul {/* Style the unordered lists inside sections with an ID in the main content area */
+    background-color: #f1f4f8;/* Set a light background color for the lists */
+    padding: 20px 40px;/* Add padding inside the lists */
+    border-left: 4px solid #1565c0;/* Add a left border to the lists for emphasis */
+    border-radius: 5px;/* Round the corners of the lists */
 }
 
-main section[id] li {
-    margin-bottom: 8px;
+main section[id] li {/* Style the list items inside sections with an ID in the main content area */
+    margin-bottom: 8px;/* Add space below each list item */
 }
 
 /* Google map */
-iframe {
-    display: block;
-    width: 100%;
-    max-width: 700px;
-    height: 400px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+iframe {/* Style the iframes, which may contain Google Maps */
+    display: block;/* Make the iframes block-level elements */
+    width: 100%;/* Make the iframes take up the full width of their container */
+    max-width: 700px;/* Limit the maximum width of the iframes */
+    height: 400px;/* Set a fixed height for the iframes */
+    margin: 0 auto;/* Center the iframes horizontally */
+    border-radius: 10px;/* Round the corners of the iframes */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);/* Add a subtle shadow to the iframes */
 }
 
 /* Horizontal rule styles */
-hr {
-    border: none;
-    height: 1px;
-    background-color: #d0d5db;
-    margin: 30px 0;
+hr {/* Style the horizontal rules */
+    border: none;/* Remove the default border */
+    height: 1px;/* Set the height of the horizontal rules */
+    background-color: #d0d5db;/* Set a light gray background color for the horizontal rules */
+    margin: 30px 0;/* Add vertical spacing above and below the horizontal rules */
 }
 
 /* Footer styles */
-footer {
-    background: linear-gradient(135deg, #0d47a1, #1565c0);
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
-    margin-top: 40px;
+footer {/* Style the footer of the webpage */
+    background: linear-gradient(135deg, #0d47a1, #1565c0);/* Add a blue gradient background to the footer */
+    color: white;/* Set the text color to white */
+    text-align: center;/* Center the content inside the footer */
+    padding: 25px 15px;/* Add padding inside the footer */
+    margin-top: 40px;/* Add space above the footer */
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+footer a {/* Style the links inside the footer */
+    color: white;/* Set the text color to white */
+    text-decoration: none;/* Remove underline from the links */
+    font-weight: bold;/* Make the text bold */
 }
 
-footer a:hover {
-    color: #bbdefb;
-    text-decoration: underline;
+footer a:hover {/* Change the link appearance when hovered over */
+    color: #bbdefb;/* Change the text color to a light blue on hover */
+    text-decoration: underline;/* Underline the links on hover */
 }
 
 
 /* Responsive to tablets */
-@media screen and (max-width: 768px) {
-    main {
-        width: 94%;
-        margin: 20px auto;
+@media screen and (max-width: 768px) {/* Adjust layout for tablet screens */
+    main {/* Style the main content area for tablet screens */
+        width: 94%;/* Set the width of the main content area */
+        margin: 20px auto;/* Center the main content area horizontally and add vertical spacing */
     }
 
-    nav {
-        gap: 5px;
+    nav {/* Style the navigation bar for tablet screens */
+        gap: 5px;/* Reduce the space between the navigation links */
     }
 
-    .nav-link {
-        font-size: 13px;
-        padding: 9px 12px;
+    .nav-link {/* Style the individual navigation links for tablet screens */
+        font-size: 13px;/* Reduce the font size of the navigation links */
+        padding: 9px 12px;/* Add padding to the navigation links */
     }
 
-    h1 {
-        font-size: 24px;
+    h1 {/* Style the main heading for tablet screens */
+        font-size: 24px;/* Set the font size for h1 elements */
     }
 
-    h2 {
-        font-size: 21px;
+    h2 {/* Style the second-level headings for tablet screens */
+        font-size: 21px;/* Set the font size for h2 elements */
     }
 
-    section {
-        padding: 20px;
+    section {/* Style the sections for tablet screens */
+        padding: 20px;/* Add padding to the sections */
     }
 
-    article {
-        text-align: center;
+    article {/* Style the articles for tablet screens */
+        padding: 15px;/* Add padding to the articles */
+        text-align: center;/* Center the content inside the articles */
     }
 
-    main section div img {
-        width: 45%;
-        height: 200px;
+    main section div img {/* Style the images inside divs of sections in the main content area for tablet screens */
+        width: 45%;/* Set the width of the images to 45% of their container */
+        height: 200px;/* Set a fixed height for the images */
     }
 
-    iframe {
-        height: 350px;
+    iframe {/* Style the iframes for tablet screens */
+        height: 350px;/* Set a fixed height for the iframes */
     }
 }
 
 /* Responsive to normal mobile phone */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 12px 10px;
+@media screen and (max-width: 600px) {/* Adjust layout for mobile phone screens */
+    header {/* Style the header for mobile phone screens */
+        padding: 12px 10px;/* Reduce the padding inside the header */
     }
 
-    header img {
-        width: 80px;
-        height: 80px;
+    header img {/* Style the logo image inside the header for mobile phone screens */
+        width: 80px;/* Reduce the width of the logo */
+        height: 80px;/* Reduce the height of the logo */
     }
 
-    nav {
-        flex-direction: column;
-        width: 100%;
-        gap: 4px;
+    nav {/* Style the navigation bar for mobile phone screens */
+        flex-direction: column;/* Stack the navigation links vertically */
+        width: 100%;/* Make the navigation bar take up the full width of its container */
+        gap: 4px;/* Reduce the space between the navigation links */
     }
 
-    .nav-link {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
+    .nav-link {/* Style the individual navigation links for mobile phone screens */
+        display: block;/* Make the navigation links block-level elements */
+        width: 100%;/* Make the navigation links take up the full width of their container */
+        padding: 10px;/* Add padding to the navigation links */
+        font-size: 14px;/* Set the font size for the navigation links */
     }
 
-    main {
-        width: 94%;
-        margin: 15px auto;
+    main {/* Style the main content area for mobile phone screens */
+        width: 94%;/* Set the width of the main content area */
+        margin: 15px auto;/* Center the main content area horizontally and add vertical spacing */
     }
 
-    h1 {
-        font-size: 21px;
-        padding: 12px;
+    h1 {/* Style the main heading for mobile phone screens */
+        font-size: 21px;/* Set the font size for h1 elements */
+        padding: 12px;/* Add padding to the h1 elements */
     }
 
-    h2 {
-        font-size: 19px;
+    h2 {/* Style the second-level headings for mobile phone screens */
+        font-size: 19px;/* Set the font size for h2 elements */
     }
 
-    section {
-        padding: 15px;
-        margin: 18px 0;
+    section {/* Style the sections for mobile phone screens */
+        padding: 15px;/* Add padding to the sections */
+        margin: 18px 0;/* Add vertical spacing between sections */
     }
 
-    main section div {
-        flex-direction: column;
+    main section div {/* Style the divs inside sections of the main content area for mobile phone screens */
+        flex-direction: column;/* Stack the child elements vertically */
     }
 
-    main section div img {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
+    main section div img {/* Style the images inside divs of sections in the main content area for mobile phone screens */
+        width: 100%;/* Make the images take up the full width of their container */
+        max-width: 350px;/* Limit the maximum width of the images */
+        height: auto;/* Maintain the aspect ratio of the images */
     }
 
-    article img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
+    article img {/* Style the images inside articles for mobile phone screens */
+        width: 100%;/* Make the images take up the full width of their container */
+        max-width: 300px;/* Limit the maximum width of the images */
+        height: auto;/* Maintain the aspect ratio of the images */
     }
 
-    form {
-        width: 100%;
+    form {/* Style the forms for mobile phone screens */
+        width: 100%;/* Make the forms take up the full width of their container */
     }
 
-    main form {
-        padding: 20px;
+    main form {/* Style the forms inside the main content area for mobile phone screens */
+        padding: 20px;/* Reduce the padding inside the forms */
     }
 
-    form input[type="search"] {
-        width: 100%;
+    form input[type="search"] {/* Style the search input fields for mobile phone screens */
+        width: 100%;/* Make the search input fields take up the full width of their container */
     }
 
-    select {
-        width: 100%;
+    select {/* Style the select dropdowns for mobile phone screens */
+        width: 100%;/* Make the select dropdowns take up the full width of their container */
     }
 
     button,
-    input[type="submit"] {
-        width: 100%;
-        margin-top: 8px;
+    input[type="submit"] {/* Style the buttons and submit inputs for mobile phone screens */
+        width: 100%;/* Make the buttons and submit inputs take up the full width of their container */
+        margin-top: 8px;/* Add space above the buttons and submit inputs */
     }
 
-    iframe {
-        height: 280px;
+    iframe {/* Style the iframes for mobile phone screens */
+        height: 280px;/* Reduce the height of the iframes */
     }
 
-    footer {
-        padding: 20px 10px;
+    footer {/* Style the footer for mobile phone screens */
+        padding: 20px 10px;/* Reduce the padding inside the footer */
     }
 }
 
 /* For small screens: Mobile phone */
-@media screen and (max-width: 400px) {
-    .nav-link {
-        font-size: 13px;
+@media screen and (max-width: 400px) {/* Adjust layout for small mobile phone screens */
+    .nav-link {/* Style the individual navigation links for small mobile phone screens */
+        font-size: 13px;/* Reduce the font size of the navigation links */
     }
 
-    h1 {
-        font-size: 19px;
+    h1 {/* Style the main heading for small mobile phone screens */
+        font-size: 19px;/* Set the font size for h1 elements */   
     }
 
-    h2 {
-        font-size: 18px;
+    h2 {/* Style the second-level headings for small mobile phone screens */
+        font-size: 18px;/* Set the font size for h2 elements */
     }
 
-    section {
-        padding: 12px;
+    section {/* Style the sections for small mobile phone screens */
+        padding: 12px;/* Reduce the padding inside the sections */
     }
 
-    main form {
-        padding: 15px;
+    main form {/* Style the forms inside the main content area for small mobile phone screens */
+        padding: 15px;/* Reduce the padding inside the forms */
     }
 }
 
 /* Contact Form */
-.contact-form {
-max-width: 700px;
-margin: 25px auto;
-padding: 30px;
-background-color: #ffffff;
-border: 1px solid #d5dbe3;
-border-radius: 12px;
-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+.contact-form {/* Style the contact form */
+max-width: 700px;/* Limit the maximum width of the contact form */
+margin: 25px auto;/* Center the contact form horizontally and add vertical spacing */
+padding: 30px;/* Add padding inside the contact form */
+background-color: #ffffff;/* Set the background color of the contact form to white */
+border: 1px solid #d5dbe3;/* Add a light border around the contact form */
+border-radius: 12px;/* Round the corners of the contact form */
+box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);/* Add a subtle shadow to the contact form */
 }
 
 /* Contact form paragraphs */
-.contact-form p {
-margin-bottom: 18px;
+.contact-form p {/* Style the paragraphs inside the contact form */
+margin-bottom: 18px;/* Add space below the paragraphs */
 }
 
 /* Contact form labels */
-.contact-form label {
-display: inline-block;
-margin-bottom: 5px;
-color: #333333;
-font-weight: bold;
+.contact-form label {/* Style the labels inside the contact form */
+display: inline-block;/* Make the labels inline-block elements */
+margin-bottom: 5px;/* Add space below the labels */
+color: #333333;/* Set the text color of the labels to a dark gray */
+font-weight: bold;/* Make the label text bold */
 }
 
 /* Contact form inputs and textarea */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
-width: 100%;
-padding: 12px 14px;
-margin-top: 5px;
-border: 1px solid #b8c0cc;
-border-radius: 7px;
-background-color: #fdfdfd;
-color: #333333;
-font-size: 15px;
-font-family: Arial, Helvetica, sans-serif;
-transition: border-color 0.3s ease,
-box-shadow 0.3s ease,
-background-color 0.3s ease;
+.contact-form input[type="text"],/* Style the text input fields inside the contact form */
+.contact-form input[type="email"],/* Style the email input fields inside the contact form */
+.contact-form input[type="tel"],/* Style the telephone input fields inside the contact form */
+.contact-form textarea {/* Style the textarea fields inside the contact form */
+width: 100%;/* Make the form elements take up the full width of their container */
+padding: 12px 14px;/* Add padding inside the form elements */
+margin-top: 5px;/* Add space above the form elements */
+border: 1px solid #b8c0cc;/* Set a light border color for the form elements */
+border-radius: 7px;/* Round the corners of the form elements */
+background-color: #fdfdfd;/* Set the background color of the form elements to a very light gray */
+color: #333333;/* Set the text color of the form elements to a dark gray */
+font-size: 15px;/* Set the font size for the form elements */
+font-family: Arial, Helvetica, sans-serif;/* Set the font family for the form elements */
+transition: border-color 0.3s ease,/* Smoothly animate the border color property */
+box-shadow 0.3s ease,/* Smoothly animate the box-shadow property */
+background-color 0.3s ease;/* Smoothly animate the background color property */
 }
 
 /* Contact form textarea */
-.contact-form textarea {
-min-height: 140px;
-resize: vertical;
+.contact-form textarea {/* Style the textarea fields inside the contact form */
+min-height: 140px;/* Set a minimum height for the textarea */
+resize: vertical;/* Allow vertical resizing of the textarea */
 }
 
 /* Placeholder text */
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-color: #888888;
+.contact-form input::placeholder,/* Style the placeholder text inside the input fields of the contact form */
+.contact-form textarea::placeholder {/* Style the placeholder text inside the textarea fields of the contact form */
+color: #888888;/* Set the placeholder text color to a medium gray */
 }
 
 /* Input focus effect */
-.contact-form input:focus,
-.contact-form textarea:focus {
-outline: none;
-border-color: #1565c0;
-background-color: #ffffff;
-box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.15);
+.contact-form input:focus,/* Style the input fields when they receive focus inside the contact form */
+.contact-form textarea:focus {/* Style the textarea fields when they receive focus inside the contact form */
+outline: none;/* Remove the default outline */
+border-color: #1565c0;/* Change the border color to a dark blue on focus */
+background-color: #ffffff;/* Change the background color to white on focus */
+box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.15);/* Add a subtle shadow around the form elements on focus */
 }
 
 /* Required field indicator */
-.contact-form input:required:invalid,
-.contact-form textarea:required:invalid {
-border-color: #b8c0cc;
+.contact-form input:required:invalid,/* Style the required input fields that are invalid inside the contact form */
+.contact-form textarea:required:invalid {/* Style the required textarea fields that are invalid inside the contact form */
+border-color: #b8c0cc;/* Set the border color to a light gray for invalid required fields */
 }
 
 /* Contact form buttons */
-.contact-form button {
-margin-right: 10px;
-padding: 12px 24px;
+.contact-form button {/* Style the buttons inside the contact form */
+margin-right: 10px;/* Add space to the right of the buttons */
+padding: 12px 24px;/* Add padding inside the buttons */
 }
 
 /* Clear button */
-.contact-form button[type="reset"] {
-background-color: #6c757d;
+.contact-form button[type="reset"] {/* Style the reset button inside the contact form */
+background-color: #6c757d;/* Set the background color to a medium gray */
 }
 
-.contact-form button[type="reset"]:hover {
-background-color: #495057;
+.contact-form button[type="reset"]:hover {/* Change the reset button appearance when hovered over */
+background-color: #495057;/* Change the background color to a darker gray on hover */
 }
 
 /* Contact form responsive design */
-@media screen and (max-width: 600px) {
-.contact-form {
-padding: 20px;
-margin: 20px auto;
+@media screen and (max-width: 600px) {/* Adjust layout for mobile screens */
+.contact-form {/* Style the contact form for mobile screens */
+padding: 20px;/* Add padding inside the contact form */
+margin: 20px auto;/* Center the contact form horizontally and add vertical spacing */
 }
 
-.contact-form button {
-    width: 100%;
-    margin: 6px 0;
+.contact-form button {/* Style the buttons inside the contact form for mobile screens */
+    width: 100%;/* Make the buttons take up the full width of their container */
+    margin: 6px 0;/* Add vertical spacing above and below the buttons */
 }
 
 
 }
 
 /* Extra small mobile screens */
-@media screen and (max-width: 400px) {
-.contact-form {
-padding: 15px;
-border-radius: 8px;
+@media screen and (max-width: 400px) {/* Adjust layout for extra small mobile screens */
+.contact-form {/* Style the contact form for extra small mobile screens */
+padding: 15px;/* Add padding inside the contact form */
+border-radius: 8px;/* Reduce the border radius of the contact form */
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
-    font-size: 14px;
-    padding: 10px;
+.contact-form input[type="text"],/* Style the text input fields inside the contact form for extra small mobile screens */
+.contact-form input[type="email"],/* Style the email input fields inside the contact form for extra small mobile screens */
+.contact-form input[type="tel"],/* Style the telephone input fields inside the contact form for extra small mobile screens */
+.contact-form textarea {/* Style the textarea fields inside the contact form for extra small mobile screens */
+    font-size: 14px;/* Reduce the font size for the form elements */
+    padding: 10px;/* Reduce the padding inside the form elements */
 }
 
 
