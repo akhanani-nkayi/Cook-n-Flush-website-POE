@@ -44,42 +44,62 @@
         <h1>OUR PRODUCTS</h1>
         <!-- Search Bar -->
         <section>
-            <h2>Search Products</h2>
-            <form action="#" method="get">
-                <label for="search">Search:</label>
-                <input type="search"
-                       id="search"
-                       name="search"
-                       placeholder="Search for a product...">
-                <button type="submit">Search</button>
-            </form>
-        </section>
+    <h2>Search Products</h2>
+
+    <form id="productSearchForm">
+        <label for="search">Search:</label>
+
+        <input type="search"
+               id="search"
+               name="search"
+               placeholder="Search for a product..."
+               required>
+
+        <button type="submit">Search</button>
+
+        <p id="searchMessage"
+           role="status"
+           aria-live="polite"></p>
+    </form>
+</section>
         <hr>
 
         <!-- Filter Categories -->
-        <section>
-            <h2>Filter by Category</h2>
-            <form>
-                <label for="category">Category:</label>
-                <select id="category" name="category">
-                    <option value="all">All Products</option>
-                    <option value="kitchen-appliances">
-                        Kitchen Appliances
-                    </option>
-                    <option value="bathroom-appliances">
-                        Bathroom Appliances
-                    </option>
-                </select>
+    <section>
+    <h2>Filter by Category</h2>
 
-                <button type="submit">Filter</button>
-            </form>
-        </section>
+    <form id="categoryFilterForm">
+
+        <label for="category">Category:</label>
+
+        <select id="category" name="category">
+
+            <option value="all">All Products</option>
+
+            <option value="kitchen-appliances">
+                Kitchen Appliances
+            </option>
+
+            <option value="bathroom-appliances">
+                Bathroom Appliances
+            </option>
+
+            <option value="other-products">
+                Other Products
+            </option>
+
+        </select>
+
+        <button type="submit">Filter</button>
+
+    </form>
+    </section>
 
         <hr>
 
         <!-- Kitchen Appliances -->
-        <section>
-            <h2>Kitchen Appliances</h2>
+        <section class="product-category" data-category="kitchen-appliances">
+        <h2>Kitchen Appliances</h2>
             <!-- Product 1 -->
             <article>
                 <img src="../Assets/Images/refrigerator.jpg"
@@ -119,8 +139,8 @@
         <hr>
 
         <!-- Bathroom Appliances -->
-        <section>
-            <h2>Bathroom Appliances</h2>
+        <section class="product-category" data-category="bathroom-appliances">
+        <h2>Bathroom Appliances</h2>
 
             <!-- Product 4 -->
             <article>
@@ -160,8 +180,8 @@
         <hr>
 
             <!-- Other Products -->
-        <section>
-            <h2>Other Products</h2>
+        <section class="product-category" data-category="other-products">
+        <h2>Other Products</h2>
             <!-- Product 7 -->
             <article>
                 <img src="../Assets/Images/free standing dishwasher.jpg"
@@ -231,5 +251,6 @@
         <p>&copy; 2026 Cook n Flush. All rights reserved.</p>
     </footer>
     
+    <script src="../Assets/JS/products.js" defer></script>
 </body>
 </html>

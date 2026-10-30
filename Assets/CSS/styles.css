@@ -668,5 +668,16 @@ border-radius: 8px;/* Reduce the border radius of the contact form */
     padding: 10px;/* Reduce the padding inside the form elements */
 }
 
+/* Product search error message */
+#searchMessage {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Hide filtered product categories */
+.product-category[hidden] {
+    display: none;
+}
 
 }
