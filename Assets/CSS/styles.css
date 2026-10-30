@@ -667,5 +667,9 @@ border-radius: 8px;/* Reduce the border radius of the contact form */
     padding: 10px;/* Reduce the padding inside the form elements */
 }
 
+/* Prevent horizontal scrolling on mobile devices */
+body {
+    overflow-x: hidden;
+}
 
 }
