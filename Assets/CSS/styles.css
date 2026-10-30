@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/DM+Sans);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 /* Header styles */
 header {
     background: linear-gradient(135deg, #0d47a1, #1565c0); /* Add a blue gradient background */
@@ -169,12 +169,13 @@ html {/* Style the HTML element */
 }
 
 body {/* Style the body of the webpage */
-    font-family: Arial, Helvetica, sans-serif;/* Use a clean sans-serif font for the body text */
+    font-family: 'DM Sans', Arial, sans-serif;/* Use a clean sans-serif font for the body text */
     margin: 0;/* Remove default margin from the body */
     padding: 0;/* Remove default padding from the body */
     background-color: #f2f4f7;/* Set a light gray background color for the body */
     color: #000000;/* Set the default text color to black */
     line-height: 1.6;/* Set a comfortable line height for readability */
+    overflow-x: hidden;/* Prevent horizontal scrolling on the body */
 }
 
 /* Product images response design */
@@ -667,9 +668,5 @@ border-radius: 8px;/* Reduce the border radius of the contact form */
     padding: 10px;/* Reduce the padding inside the form elements */
 }
 
-/* Prevent horizontal scrolling on mobile devices */
-body {
-    overflow-x: hidden;
-}
 
 }
