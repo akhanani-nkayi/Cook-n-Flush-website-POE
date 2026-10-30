@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+https://endearing-profiterole-c8dc6f.netlify.app/
