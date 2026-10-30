@@ -680,4 +680,87 @@ border-radius: 8px;/* Reduce the border radius of the contact form */
     display: none;
 }
 
+/* Product image enlargement */
+.image-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Display the overlay */
+.image-overlay.active {
+    display: flex;
+}
+
+/* Enlarged product image */
+.enlarged-image {
+    max-width: 90%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Close button */
+.image-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    background: transparent;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    padding: 5px 15px;
+}
+
+.image-close:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: none;
+}
+
+/* Mobile image enlargement */
+@media screen and (max-width: 600px) {
+    .image-overlay {
+        padding: 15px;
+    }
+    .enlarged-image {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+    .image-close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+
+/* Phone number error styling */
+.error-message {
+    color: red;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.input-error {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+#phone:focus {
+    outline: none;
+}
+
 }

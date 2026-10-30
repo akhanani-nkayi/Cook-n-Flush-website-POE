@@ -51,8 +51,11 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <br><br>
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567">
+                    <span id="phoneError" class="error-message"></span>
+                </div>
                 <br><br>
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>

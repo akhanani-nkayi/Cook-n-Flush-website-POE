@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Product Search Functionality
+    //Product Search Functionality
     const searchForm = document.getElementById("productSearchForm");
     const searchInput = document.getElementById("search");
     const searchMessage = document.getElementById("searchMessage");
@@ -20,13 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            const products = document.querySelectorAll(
-                ".product-category article"
-            );
+            const products = document.querySelectorAll(".product-category article");
 
             let matchingProduct = null;
 
-            // First look for an exact product name
+            //First look for an exact product name
             products.forEach(function (product) {
                 const productName = product.querySelector("h3")
                     .textContent.trim().toLowerCase();
@@ -36,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            // If there is no exact match, look for a partial match
+            //If there is no exact match, look for a partial match
             if (!matchingProduct) {
                 products.forEach(function (product) {
                     const productName = product.querySelector("h3")
@@ -77,14 +75,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const filterForm = document.getElementById("categoryFilterForm");
     const categorySelect = document.getElementById("category");
 
-    const productCategories = document.querySelectorAll(
-        ".product-category"
-    );
+    const productCategories = document.querySelectorAll(".product-category");
 
     if (filterForm) {
 
         filterForm.addEventListener("submit", function (event) {
-
             event.preventDefault();
 
             const selectedCategory = categorySelect.value;
@@ -98,16 +93,75 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     section.hidden = true;
                 }
-
             });
-
         });
 
-        // Also filter immediately when the selection changes
+        //Also filter immediately when the selection changes
         categorySelect.addEventListener("change", function () {
-
             filterForm.requestSubmit();
-
         });
     }
+
+    //Product Image Enlargement Functionality
+    //Create the image overlay
+    const imageOverlay = document.createElement("div");
+    imageOverlay.className = "image-overlay";
+
+    imageOverlay.innerHTML = `
+        <button class="image-close" aria-label="Close enlarged image">
+            &times;
+        </button>
+        <img class="enlarged-image" src="" alt="">
+    `;
+
+    document.body.appendChild(imageOverlay);
+
+    const enlargedImage = imageOverlay.querySelector(".enlarged-image");
+    const closeButton = imageOverlay.querySelector(".image-close");
+
+    //Select all product images
+    const productImages = document.querySelectorAll(
+        ".product-category article img"
+    );
+
+    //Open enlarged image when clicked
+    productImages.forEach(function (img) {
+
+        img.style.cursor = "zoom-in";
+
+        img.addEventListener("click", function () {
+
+            enlargedImage.src = img.src;
+            enlargedImage.alt = img.alt;
+
+            imageOverlay.classList.add("active");
+            closeButton.focus();
+
+        });
+
+    });
+
+    //Close enlarged image
+    function closeImage() {
+        imageOverlay.classList.remove("active");
+        enlargedImage.src = "";
+    }
+
+    //Close using the X button
+    closeButton.addEventListener("click", closeImage);
+
+    //Close when clicking outside the image
+    imageOverlay.addEventListener("click", function (event) {
+        if (event.target === imageOverlay) {
+            closeImage();
+        }
+    });
+
+    //Close using Escape key
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeImage();
+        }
+});
+
 });

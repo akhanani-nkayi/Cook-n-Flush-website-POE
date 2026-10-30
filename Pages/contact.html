@@ -127,12 +127,16 @@
 
             <!-- Phone -->
             <p>
-                <label for="phone"><strong>Phone Number:</strong></label><br>
-                <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    placeholder="Enter your phone number">
+                <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="e.g. 082 123 4567">
+
+                <span id="phoneError" class="error-message"></span>
+                </div>
             </p>
 
             <!-- Subject -->

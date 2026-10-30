@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Select the contact and enquiry forms
+    //Select the contact and enquiry forms
     const forms = document.querySelectorAll(".contact-form, main form[data-validate]");
     forms.forEach(function (form) {
         form.addEventListener("submit", function (event) {
 
             let isValid = true;
-            // Remove previous error messages
+            //Remove previous error messages
             form.querySelectorAll(".error-message").forEach(function (error) {
                 error.remove();
             });
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 input.removeAttribute("aria-invalid");
             });
 
-            // Function to display error messages
+            //Function to display error messages
             function displayError(input, message) {
                 const error = document.createElement("small");
                 error.className = "error-message";
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 isValid = false;
             }
 
-            // Validate required fields
+            //Validate required fields
             form.querySelectorAll("input[required], textarea[required], select[required]")
                 .forEach(function (input) {
 
@@ -52,23 +52,50 @@ document.addEventListener("DOMContentLoaded", function () {
                         }
                     }
 
-                    // Phone validation when a number is supplied
-                    if (input.type === "tel" && input.value.trim() !== "") {
-                        const phonePattern = /^(\+27|0)[6-8][0-9]{8}$/;
-                        const phone = input.value.replace(/[\s-]/g, "");
+                    
+    //Phone number validation
+    const phoneInput = document.getElementById("phone");
+    const phoneError = document.getElementById("phoneError");
+    const form = phoneInput.closest("form");
 
-                        if (!phonePattern.test(phone)) {
-                            displayError(input, "Please enter a valid South African phone number.");
-                        }
-                    }
+    form.addEventListener("submit", function(event) {
+        const phone = phoneInput.value.trim();
+        //South African phone number format
+        const phonePattern = /^(?:(?:\+27)|0)[6-8][0-9]{8}$/;
 
-                    // Message length validation
+        //Remove spaces before checking
+        const cleanPhone = phone.replace(/\s/g, "");
+
+        if (cleanPhone === "") {
+            event.preventDefault();
+            phoneError.textContent = "Please enter your phone number.";
+            phoneInput.classList.add("input-error");
+
+        } else if (!phonePattern.test(cleanPhone)) {
+            event.preventDefault();
+            phoneError.textContent = "Please enter a valid South African phone number (e.g. 082 123 4567).";
+            phoneInput.classList.add("input-error");
+        } else {
+
+        phoneError.textContent = "";
+        phoneInput.classList.remove("input-error");
+    }
+});
+
+    //Remove error message when user starts correcting the number
+    phoneInput.addEventListener("input", function() {
+        phoneError.textContent = "";
+        phoneInput.classList.remove("input-error");
+
+    });
+
+                    //Message length validation
                     if (input.tagName === "TEXTAREA" && input.value.trim().length < 10) {
                         displayError(input, "Your message must contain at least 10 characters.");
                     }
                 });
 
-            // Registration password validation
+            //Registration password validation
             const password = form.querySelector("#registerPassword");
             const confirmPassword = form.querySelector("#confirmPassword");
 
@@ -82,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
-            // Stop submission if information is invalid
+            //Stop submission if information is invalid
             if (!isValid) {
                 event.preventDefault();
 
