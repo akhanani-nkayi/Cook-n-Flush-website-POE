@@ -39,7 +39,7 @@ and add in pictures related to the information.
 
 Feedback Part1 
 
-After going through the feedback after receiving the rseults of part 1, I went on and apply some changes to not only to the code but also on the ReadME file. I made sure to list out the features and function in detail than last time to show what they do and what they are for. I applied the Sitemap to show how the structure of the pogram looks like. Lastly I adjusted some of the code in the previous pages to make it work better and not affect the other codes.
+After going through the feedback after receiving the rseults of part 1, I went on and apply some changes to not only to the code but also on the ReadME file. I made sure to list out the features and function in detail than last time to show what they do and what they are for. I applied the Sitemap to show how the structure of the program looks like. Lastly I adjusted some of the code in the previous pages to make it work better and not affect the other codes.
 
 Sitemap
 
@@ -86,6 +86,20 @@ Applied Arial font into the website for the normal text that displays the inform
 Styles
 
 I have applied block style features making them separate and not make it lack a sense of style and bland. Applied colors related to the theme of what the website is for and relating to the organization, making the website seem more presentable and decorative. There is also responsive designs added into the CSS file for when the mouse cursor or selector is on a picture or is on the navigation tabs making the website responsive.
+
+Part 3
+
+Feedback part 2
+
+After going over the feedback on part 2, I went on to fix a few of the errors while also editing a few of the already existing code. I made the search and filter features responsive to whatever input the user types in to find the products they are in search of. I slightly changed the link of the fonts. I lo ensured that the link to the social media pages work.
+
+JavaScript
+
+For the javascript, I typed the validation code for the enquiry, contact and account pages. These code show error messages for when user does not type into the input fields when submitting. I also typed in another javacript code for search and filter feature in the products page to search for the products the user is looking for.
+
+Sitemap
+
+I created a new file where it takes users to the pages of the website with the links.
 
 References
 Bidkar, A., 2023. Handy HTML Tags Cheat Sheet for Quick Web Development. [Online] 
