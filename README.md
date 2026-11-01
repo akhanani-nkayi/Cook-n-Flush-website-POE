@@ -95,7 +95,7 @@ After going over the feedback on part 2, I went on to fix a few of the errors wh
 
 JavaScript
 
-For the javascript, I typed the validation code for the enquiry, contact and account pages. These code show error messages for when user does not type into the input fields when submitting. I also typed in another javacript code for search and filter feature in the products page to search for the products the user is looking for.
+For the javascript, I typed the validation code for the enquiry, contact and account pages. These code show error messages for when user does not type into the input fields when submitting. I also typed in another javacript code for search and filter feature in the products page to search for the products the user is looking for. I added in code or the buttons cart and wishlist tht display a message when it is successful in purchase.
 
 Sitemap
 
