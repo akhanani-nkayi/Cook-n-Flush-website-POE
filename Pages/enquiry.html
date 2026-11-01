@@ -44,7 +44,7 @@
         <h1 style="color: blue;">ENQUIRY PAGE</h1>
             <h2>Have a Question? We're Here to Help!</h2>
 
-            <form action="#" method="post" data-validate>
+            <form id="enquiry-form" data-validate>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br><br>
@@ -82,6 +82,7 @@
                 <br><br>
                 <input type="submit" value="Submit Enquiry">
             </form>
+            <p id="enquiryStatus" role="status" aria-live="polite"></p>
             </section>
 
         <hr>
@@ -128,6 +129,9 @@
         <p>&copy; 2026 Cook n Flush. All rights reserved.</p>
     </footer>
     
+    <!-- EmailJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+
     <script src="../Assets/JS/script.js" defer></script>
 </body>
 </html>

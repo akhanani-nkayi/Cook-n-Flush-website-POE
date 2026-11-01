@@ -101,7 +101,7 @@
     <section>
         <h2 style="text-align: center;">Send Us a Message</h2>
 
-        <form class="contact-form" action="#" method="post" data-validate>
+        <form id="contact-form" class="contact-form" data-validate>
 
             <!-- Full Name -->
             <p>
@@ -167,6 +167,7 @@
                 <button type="reset">CLEAR</button>
             </p>
         </form>
+        <p id="contactStatus" role="status" aria-live="polite"></p>
     </section>
     <hr>
 
@@ -206,6 +207,9 @@
         </p>
         <p>&copy; 2026 Cook n Flush. All rights reserved.</p>
     </footer>
+
+    <!-- EmailJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
 
     <script src="../Assets/JS/script.js" defer></script>
 </body>
