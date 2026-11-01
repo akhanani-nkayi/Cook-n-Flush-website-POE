@@ -62,7 +62,10 @@ Cook n Flush website POE
 |        |-Logo image.jpg
 |        |-refrigerator.jpg
 |        |-washer dryer counter.jpg
-|    |JS 
+|    |-JS 
+|       |-cart-wishlist.js
+|       |-product.js
+|       |-script.js
 |-Components
 |-Miscelleneous
 |    |-WEDE5020POEWebsite
@@ -76,6 +79,9 @@ Cook n Flush website POE
 |   |-enquiry.html
 |   |-products.html
 |-index.html
+|-README.md
+|-robot.txt
+|-sitemap.xml
 
 CSS Styling
 
